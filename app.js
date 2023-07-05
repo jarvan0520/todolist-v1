@@ -153,10 +153,13 @@ let port = process.env.PORT;
 if (port == null || port == "") {
   port = 8000;
 }
-app.listen(port);
-app.listen(3000,function(req,res){
+app.listen(port,function(){
     console.log("Server has started successfully")
-})
+});
+
+// app.listen(3000,function(req,res){
+//     console.log("Server has started successfully")
+// })
 
 
 
